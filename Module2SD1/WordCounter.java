@@ -2,7 +2,6 @@ package Module2SD1;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -16,9 +15,8 @@ public class WordCounter implements CONSTANTS{
         File file = new File(normalizedDirectory);
         try(Scanner sc = new Scanner(new FileInputStream(file))){
             int count=0;
-            while(sc.hasNext()){
+            while(sc.hasNext()){ // While there is a next word
                 Word nextWord = new Word(sc.next());
-
                 if(arrayList.contains(nextWord)) {
                     arrayList.get(arrayList.indexOf(nextWord)).addWordCount();
                 } else {
