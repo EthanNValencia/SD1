@@ -1,3 +1,0 @@
-Step 1: Find a way to download the webpage and write it to a text file. 
-Step 2: Find a way to process all the words in the document. Do some string cleaning. 
-Step 3: Find a way to count all the words that have been cleaned. 
