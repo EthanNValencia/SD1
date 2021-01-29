@@ -15,7 +15,7 @@ public class StringCleaner implements CONSTANTS{
             String[] stringArray = new String[]{"<SPAN STYLE=\"margin-left: 20%\">", "<BR>", "<I>",
                     "&mdash", "</I>", "</SPAN>"}; // list of strings to delete
 
-            char[] charArray = {',', '.', ';', '"', '!', '?'}; // list of chars to delete
+            char[] charArray = {',', '.', '\'', ';', '"', '!', '?'}; // list of chars to delete
 
             while (scan.hasNextLine()) {
                 reader = scan.nextLine() + "\n";

@@ -21,10 +21,7 @@ public class Word {
 
     @Override
     public String toString() {
-        return "\n" + "Word{" +
-                "wordName='" + wordName + '\'' +
-                ", wordCount=" + wordCount +
-                '}';
+        return "\n" + wordName + " " + wordCount;
     }
 
     public Word(String wordName) {

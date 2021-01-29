@@ -26,7 +26,6 @@ public class WordCounter implements CONSTANTS{
                 count++;
             }
             System.out.println("Number of words: " + count);
-
             //System.out.println(arrayList.toString());
 
             Collections.sort(arrayList, new Comparator<Word>() {
@@ -36,7 +35,7 @@ public class WordCounter implements CONSTANTS{
                 }
             });
 
-            //System.out.println(arrayList.toString());
+            System.out.println(arrayList.toString());
             WriteToFile.writeThisToFile(wordReportDirectory, arrayList.toString());
         } catch (IOException e) {
             e.printStackTrace();
